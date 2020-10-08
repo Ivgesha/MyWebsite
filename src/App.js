@@ -1,11 +1,16 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
+import Introduction from "./components/Introduction";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import SkillAux from "./components/SkillAux";
 
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
+    <div className="main">
+      <Introduction />
+      <About />
+      <SkillAux />
     </div>
   );
 }

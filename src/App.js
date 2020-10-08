@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import SkillAux from "./components/SkillAux";
+import ProjectCardAux from "./components/ProjectCardAux";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Introduction />
       <About />
       <SkillAux />
+      <ProjectCardAux />
     </div>
   );
 }

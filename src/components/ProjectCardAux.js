@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import secureVaultLogo from "../images/secureVaultLogo.png";
 function ProjectCardAux() {
+  // dont forger to make the id dyncamic! 
   const [projects] = useState([
     {
       id: 1,
       projectName: "SecureVault",
-      logo: "secureVaultLogo",
+      logo: secureVaultLogo,
       description: "Save your most important data in your digital vault!",
-      giturl: "#https://github.com/Ivgesha/SecureVault2019-1",
+      giturl: "https://github.com/Ivgesha/SecureVault2019-1",
     },
   ]);
 

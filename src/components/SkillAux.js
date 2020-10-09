@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Skills from "./Skills";
 
+// make the id dynamic!
 function SkillAux() {
   const [skills] = useState([
     { id: 1, name: "C" },

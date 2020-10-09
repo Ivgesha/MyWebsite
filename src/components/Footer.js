@@ -11,6 +11,7 @@ function Footer(){
 
 
     return(
+        <div>
         <footer>
             <img src={myWebsiteLogo} alt="Logo"/>
             <br/>
@@ -37,14 +38,10 @@ function Footer(){
                 </button>
             </a>
 
-             
-
-
-
-
+            <h4>Copyright &copy; 2020 Evgeni Iseev. </h4>
         </footer>
-
-
+ 
+        </div>
 
     )
 

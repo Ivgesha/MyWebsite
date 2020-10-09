@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "./App.css";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
-import SkillAux from "./components/SkillAux";
-import ProjectCardAux from "./components/ProjectCardAux";
+import Skills from "./components/Skills";
+import ProjectCards from "./components/ProjectCards";
 
 function App() {
   return (
     <div className="main">
       <Introduction />
       <About />
-      <SkillAux />
-      <ProjectCardAux />
+      <Skills />
+      <ProjectCards />
     </div>
   );
 }

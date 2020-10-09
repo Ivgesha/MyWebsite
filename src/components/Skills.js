@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import SkillAux from "./SkillAux";
+import SkillsAux from "./SkillsAux";
+import SkillsData from "../data/SkillsData"
 
-function Skills(props) {
+// make the id dynamic!
+function Skill() {
+  const [skills,setSkills] = useState(SkillsData);
+  
   return (
-    <div className="my-skills">
-      <h3>{props.name}</h3>
+    <div>
+      <h3>02.My skills</h3>
+      {skills.map((skill) => {
+        return <SkillsAux key={skill.id} name={skill.name} />;
+      })}
     </div>
   );
 }
-export default Skills;
+
+export default Skill;

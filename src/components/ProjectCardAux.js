@@ -1,24 +1,19 @@
-import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
-import projectCardData from "../data/ProjectCardData";
+import React from "react";
 
-function ProjectCardAux() {
-  const [projects] = useState(projectCardData)
 
+function ProjectCardAux(props) {
+  const buttonName = "<script/>";
+  
   return (
-    <div>
-      {projects.map((project) => {
-        return (
-          <ProjectCard
-            key={project.id}
-            projectName={project.projectName}
-            logo={project.logo}
-            description={project.description}
-            giturl={project.giturl}
-          />
-        );
-      })}
+    <div className="project-card">
+      <h2>{props.projectName}</h2>
+      <img src={props.logo} />
+      <p>{props.description}</p>
+      <a href={props.giturl}>
+      <button>{buttonName}</button>
+      </a>
     </div>
   );
 }
+
 export default ProjectCardAux;

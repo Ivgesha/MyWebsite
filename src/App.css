@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  /*background: linear-gradient(0, #94ee84, #68a8e9);*/
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1600px;
+  height: 100%;
+}
+
+.introduction {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  margin: 10cm;
+}
+
+.introduction h1 {
+  font-size: 3em;
+}
